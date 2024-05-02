@@ -1,0 +1,385 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background-color: #252525;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    top: 5px;
+    background-color: #333;
+    border-radius: 9px;
+    padding: 6px;
+    position: fixed;
+    z-index: 2;
+}
+
+nav button{
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    padding: 0px 5px 2px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+nav button:hover{
+    background-color: #474747;
+    cursor: pointer;
+}
+
+.sidebar{
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    right: 0;
+    width: 390px;
+    padding: 20px;
+}
+
+
+.container{
+    display: flex;
+}
+.sidebar2{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    background-color: #242424;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    overflow-y: auto;
+    text-decoration: none;
+}
+.sidebar2 img{
+    width: 120px;
+    height: 135px;
+    margin-bottom: -5px;
+}
+.sidebar2 button img{
+    width: 50px;
+}
+.sidebar2 a{
+    text-decoration: none;
+}
+.wailee{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+}
+.wailee:hover{
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+.bt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    transition: background-color 0.5s ease-in-out;
+}
+.sidebar2 button{
+    border: none;
+    width: 120px;
+    height: 103px;
+    color: white;
+    font-size: 12.5px;
+    cursor: pointer;
+}
+.sidebar2 .bt:hover{
+    background-color: black;
+}
+
+.main{
+    flex: 1; /* Take up remaining space */
+    padding-left: 245px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden;
+}
+ h1{
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;  
+    position: absolute;
+    text-align: center;
+    font-size: 18vw;
+    color: #fff;
+}
+
+.heading{
+    color: white;
+    font-size: 28px;
+    margin: 30px 0px 60px 0px;
+}
+.intro img{
+    width: 100%;
+    padding: 150px 30px 50px 0px;
+}
+.name .p2{
+    color: #666666;
+    font-size: 14.5px;
+    margin: 0px 120px 50px 0px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.skill p{
+    color: #666666;
+    letter-spacing: 5px;
+}
+.stats{
+    margin: 0px 120px 0px 0px;
+    display: flex;
+    text-align: center;
+}
+.stat{
+    background-color: rgb(238, 238, 238);
+    padding: 45px 10px 45px 10px;
+    width: 50vh;
+}
+.stat .p1{
+    font-size: 22px;
+}
+.stat .p2{
+    font-size: 15px;
+}
+.skills button{
+    margin: 30px 0px 20px 0px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.skills button:hover{
+    background-color: #c2c2c2;
+}
+.price .container{
+    display: flex;
+    list-style-type: none;
+    list-style: none;
+}
+.price .container .basic, .price .container .pro{
+    text-align: center;
+    width: 44%;
+}
+.price .container .pro{
+    margin-left: 15px;
+}
+.price .container .basic :hover, .price .container .pro :hover{
+    li, .l1, .l2, button{
+        background-color: white;
+    }
+    .bt{
+        background-color: #f5f5f5
+    }
+    .title{
+        background-color: #a5a5a5;
+        color: white;
+        border: none;
+    }
+    li{
+        border-bottom: 1px solid #c2c2c2;
+        color: black;
+    }
+    .l1{
+        border: none;
+    }
+    .l2{
+        border-bottom: 1px solid #c2c2c2;
+    }
+    
+}
+.price .container .basic .title, .price .container .pro .title{
+    padding: 33px 0px 33px 0px ;
+    font-size: 23px;
+    background-color: #686868;
+    color: #cfcfcf;
+    border: none;
+    list-style-type: none;
+}
+.price .container .basic li, .price .container .pro li{
+    padding: 17px 0px 17px 0px ;
+    font-size: 14.5px;
+    border-bottom: 1px solid #7e7e7e;
+    margin: 0px;
+    color: rgb(44, 44, 44);
+    background-color: #a7a7a7;
+    list-style-type: none;
+}
+
+.price .container .basic .l1, .price .container .pro .l1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: black;
+    border: none;
+}
+.price .container .basic .l2, .price .container .pro .l2{
+    padding-top: 1px;
+    font-size: 17px;
+    border: none;
+    color: #666666;
+    border-bottom: 1px solid #7e7e7e;
+}
+.price .container .basic .bti, .price .container .pro .bti{
+    padding: 21px 21px 21px 21px;
+    font-size: 14.5px;
+    background-color: #919191;
+    border: none;
+}
+.price .container .basic button, .price .container .pro button{
+    padding: 11px 21px 11px 21px;
+    font-size: 14.5px;
+    background-color: #a7a7a7;
+    color: #333333;
+    cursor: pointer;
+    border: none;
+}
+.price .container .basic button:hover, .price .container .pro button:hover{
+    background-color: black;
+    color: white;
+}
+.contact{
+    color: #8f8f8f;
+    font-size: 14.5px;
+}
+.contact .ct{
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact .ct img{
+    width: 40px;
+    padding-right: 30px;
+}
+.contact .message{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .message p{
+    padding-bottom: 15px;
+}
+.contact input{
+    width: 87%;
+    cursor: text;
+    font-size: 15.5px;
+    padding: 18px 10px 18px 10px;
+}.contact button{
+    width: 180px;
+    font-size: 15.7px;
+    cursor: pointer;
+    color: #222222;
+    padding: 15px 0px 15px 0px;
+}
+.contact button, .contact input{
+    margin: 7px 0px 7px 0px;
+    border: none;
+}
+.mayhem{
+    padding: 10px 0px 60px 0px;
+}
+.mayhem button{
+    font-size: 12px;
+    cursor: pointer;
+    color: #222222;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:550px){
+    .sidebar2{
+        display: none;
+    }
+    .main{
+        padding: 0px 0px 0px 45px;
+        overflow-x: hidden;
+    }
+    .name .p2{
+        margin: 0px 50px 50px 0px;
+    }
+    .stats{
+        margin: 0px 40px 0px 0px;
+        flex-wrap: wrap;
+    }
+    .stat{
+        background-color: rgb(238, 238, 238);
+        padding: 30px 0px 30px 0px;
+        width: 100%;
+    }
+    .stat .p1{
+        font-size: 25px;
+    }
+    .stat .p2{
+        font-size: 17px;
+    }
+    .price .container{
+        justify-content: center;
+        flex: wrap;
+        flex-direction: column;
+    }
+    .price .container .basic, .price .container .pro{
+        width: 90%;
+    }
+    .price .container .pro{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .main{
+        padding: 0px 0px 0px 170px;
+        overflow-x: hidden;
+    }
+    .name .p2{
+        margin: 0px 35px 50px 0px;
+    }
+    .stats{
+        margin: 0px 40px 0px 0px;
+        flex-wrap: wrap;
+    }
+    .stat{
+        background-color: rgb(238, 238, 238);
+        padding: 27px 11px 27px 11px;
+    }
+    .stat .p1{
+        font-size: 25px;
+    }
+    .stat .p2{
+        font-size: 17px;
+    }
+}
+@media scrveen and (min-width: 551px){
+    .navbar{
+        display: none;
+    }
+}
